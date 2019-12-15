@@ -98,7 +98,8 @@ elsif
           n1 = gets.to_i
           raiz = n1 * n1
           puts "O resultado da soma é #{raiz}"
-        else 
+        else
+          opcao_calculadora == 4
           break
       end
       puts "Deseja calcular novamente (S/N)?"
