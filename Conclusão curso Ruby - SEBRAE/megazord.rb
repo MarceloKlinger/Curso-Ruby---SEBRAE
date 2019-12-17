@@ -21,19 +21,19 @@ if opcao_megazord == 1
   jogar_novamente = "S"
   while jogar_novamente.upcase == "S"
 
-  puts "-------------------------------"
-  puts "-------------------------------"
-  puts "Bem vindo ao jogo da advinhação"
-  puts "\n\n"
-  puts "Qual é o seu nome?"
-  nome = gets
-  puts "\n\n"
-  puts "Começaremos o jogo para você, #{nome}"
-  puts "\n\n"
-  puts "Escolhendo um número secreto entre 1 e 200..."
-  numero_secreto = Random.rand(200)+1
-  puts "Escolhido... que tal advinhar hoje nosso número secreto?"
-  puts "\n\n"
+    puts "-------------------------------"
+    puts "-------------------------------"
+    puts "Bem vindo ao jogo da advinhação"
+    puts "\n\n"
+    puts "Qual é o seu nome?"
+    nome = gets
+    puts "\n\n"
+    puts "Começaremos o jogo para você, #{nome}"
+    puts "\n\n"
+    puts "Escolhendo um número secreto entre 1 e 200..."
+    numero_secreto = Random.rand(200)+1
+    puts "Escolhido... que tal advinhar hoje nosso número secreto?"
+    puts "\n\n"
 
   limite_de_tentativas = 3
 
@@ -92,16 +92,16 @@ elsif
         n2 = gets.to_f
         area = n1 * n2
         puts "O resultado da soma é #{area}m²"
-        elsif
-          opcao_calculadora == 3
-          puts "Digite o número para calcular a raiz"
-          n1 = gets.to_i
-          raiz = n1 * n1
-          puts "O resultado da soma é #{raiz}"
-        else
-          opcao_calculadora == 4
-          break
-      end
+      elsif
+        opcao_calculadora == 3
+        puts "Digite o número para calcular a raiz"
+        n1 = gets.to_i
+        raiz = n1 * n1
+        puts "O resultado da soma é #{raiz}"
+      else
+        opcao_calculadora == 4
+        break
+    end
       puts "Deseja calcular novamente (S/N)?"
       opcao_calculadora = gets.chomp
   end
