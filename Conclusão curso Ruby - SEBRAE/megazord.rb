@@ -5,8 +5,6 @@ def bem_vindo
   nome = gets.chomp
 end
 
-nome = bem_vindo
-
 def escolha_as_opcoes_megazord
   puts "O Que deseja fazer?"
   puts "1 - JOGOS"
@@ -16,6 +14,7 @@ def escolha_as_opcoes_megazord
   opcao_megazord = gets.to_i
 end
 
+nome = bem_vindo
 opcao_megazord = escolha_as_opcoes_megazord
 
 if opcao_megazord == 1
@@ -26,9 +25,6 @@ if opcao_megazord == 1
   puts "-------------------------------"
   puts "-------------------------------"
   puts "Bem vindo ao jogo da advinhação"
-  puts "\n\n"
-  puts "Qual é o seu nome?"
-  nome = gets
   puts "\n\n"
   puts "Começaremos o jogo para você, #{nome}"
   puts "\n\n"
@@ -108,5 +104,4 @@ elsif
       opcao_calculadora = gets.chomp
   end
 end
-
-puts "Obrigado por usar nosso sistema"
+puts "Obrigado por usar nosso sistema #{nome}"
