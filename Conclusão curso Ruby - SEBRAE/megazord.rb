@@ -89,7 +89,7 @@ elsif
         puts "Digite a medida da altura do terreno em m²"
         n2 = gets.to_f
         area = n1 * n2
-        puts "O resultado da soma é #{area}m²"
+        puts "O resultado da aréa do terrono é #{area}m²"
         elsif
           opcao_calculadora == 3
           puts "Digite o número para calcular a raiz"
