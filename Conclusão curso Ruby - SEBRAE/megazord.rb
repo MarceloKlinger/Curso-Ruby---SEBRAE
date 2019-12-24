@@ -90,18 +90,19 @@ elsif
         n2 = gets.to_f
         area = n1 * n2
         puts "O resultado da aréa do terrono é #{area}m²"
-        elsif
-          opcao_calculadora == 3
-          puts "Digite o número para calcular a raiz"
-          n1 = gets.to_i
-          raiz = n1 * n1
-          puts "O resultado da raiz quadrada é #{raiz}"
-        else
-          opcao_calculadora == 4
+      elsif
+        opcao_calculadora == 3
+        puts "Digite o número para calcular a raiz"
+        n1 = gets.to_i
+        raiz = n1 * n1
+        puts "O resultado da raiz quadrada é #{raiz}"
+      else
+        opcao_calculadora == 4
           break
       end
       puts "Deseja calcular novamente #{nome} (S/N)?"
       opcao_calculadora = gets.chomp
   end
 end
+
 puts "Obrigado por usar nosso sistema #{nome}"
